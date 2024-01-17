@@ -31,7 +31,7 @@ async function handleSubmit(evt) {
 }
 
 return (
-  <div>
+  <div className='form'>
     <h1>Log In Form</h1>
     <div className="form-container" onSubmit={handleSubmit}>
       <form autoComplete="off" >
@@ -39,7 +39,7 @@ return (
         <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
         <label>Password</label>
         <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-        <button type="submit">LOG IN</button>
+        <button className='button' type="submit">LOG IN</button>
       </form>
     </div>
     <p className="error-message">&nbsp;{error}</p>
