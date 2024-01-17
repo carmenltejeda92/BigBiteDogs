@@ -8,6 +8,7 @@ const lineItemSchema = new Schema({
 }, {
   timestamps: true,
   toJSON: { virtuals: true }
+  // an indication to categorize a virtual attribute - info used but not saved to DB 
 });
 
 lineItemSchema.virtual('extPrice').get(function() {
